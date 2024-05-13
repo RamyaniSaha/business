@@ -1468,6 +1468,9 @@
     .textbox p{
         margin-right: 8em!important;
     }
+    .img-box{
+        height: 128vh;
+    }
     .containers{
         grid-template-columns: repeat(1,1fr); 
         padding: 4% 20px 0 20px;
