@@ -47,33 +47,60 @@
                      <div class="logo">
                          <h1><img src="images/logo-1.png"></h1>
                      </div>
-                     <div class="menu1">
-                      <ul class="dropdown">
-                         <li>HOME <i class="fa-solid fa-angle-down"></i>
-                             <ul class="dropdown-list">
-                                 <li><a href="">Home1</a></li>
-                                 <li><a href="">Home2</a></li>
-                                 <li><a href="">Home3</a></li>
-                             </ul>
-                         </li>
-                         <li>SERVICES <i class="fa-solid fa-angle-down"></i></li>
-                         <li>FEATURES <i class="fa-solid fa-angle-down"></i></li>
-                         <li>SHOP <i class="fa-solid fa-angle-down"></i></li>
-                         <li>BLOG <i class="fa-solid fa-angle-down"></i></li>
-                         <li>PAGES <i class="fa-solid fa-angle-down"></i></li>
-                         <span1><li><i class="fa-solid fa-magnifying-glass"></i></li></span1>
-                         <span1><li><i class="fa-solid fa-bag-shopping"></i><span>2</span></li></span1>
-                      </ul> 
-                     </div>
-                     <div class="toggle">
-                        <span>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                            <i class="fa-solid fa-bag-shopping"></i><span1>2</span1>
-                            <i class="fa-solid fa-bars"></i>
+                  <nav class="menu1">
+                    <ul class="dropdown">
+                        <li class="has-dropdown">HOME <i class="fa-solid fa-angle-down"></i>
+                            <ul class="dropdown-list">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                            </ul>
+                        </li>
+                        <li>FEATURES</li>
+                        <li>CASE STUDIES</li>
+                        <li>SERVICES</li>
+                        <li>BLOG</li>
+                        <li>SITE MAP</li>
+                        <span class="carts">
+                            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li><i class="fa-solid fa-bag-shopping"></i><span>2</span></li>
                         </span>
-                     </div> 
-                 </div>
-                 <div id="nav-position"></div>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Toggle -->
+                <div class="toggle">
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-bag-shopping"></i><span class="toggle-sub">2</span>
+                        <button class="toggle-menu" aria-label="Toggle Menu">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul class="mobile-nav">
+                    <li>
+                        <a href="#" class="mobile-nav-link" data-dropdown="home-dropdown">
+                            HOME <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="mobile-dropdown" id="home-dropdown">
+                            <li><a href="#">Home 1</a></li>
+                            <li><a href="#">Home 2</a></li>
+                            <li><a href="#">Home 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">FEATURES</a></li>
+                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">CASE STUDIES</a></li>
+                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">SERVICES</a></li>
+                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">BLOG</a></li>
+                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">SITE MAP</a></li>
+                </ul>
+            </div>
                  <div class="owl-carousel owl-theme owl-banner">
                     <div class="item">
                         <div class="img-box img-box1">
@@ -125,15 +152,15 @@
  <div id="middle-sec">
     <div class="containers">
         <div class="middle-text">
-            <h3>We Provide The Solutions <br>To Grow Your Business</h3>
+            <h3>We Provide The Solutions <span class="span-t">To Grow Your Business</span></h3>
                <p>
                    Design better, faster, and more collaboratively with real-time, the 
                    in-browser design collaboration and presentation tools. Lorem 
-                   <br>Ipsum is simply text of the printing and typesetting industry. Lorem 
+                   <span class="span-t2">Ipsum is simply text of the printing and typesetting industry. Lorem </span>
                    Ipsum has been standard dummy.
                </p>
                <p>
-                  <span> Moniorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                  <span class="middle-span"> Moniorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
                    nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum 
                    dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
                    tempor invidunt ut labore et dolore. sadipscing elitr, sediam nonumy 
@@ -151,7 +178,7 @@
                nibh, molestie id viverra.</p>
               </div>
           </div>
-          <div class="box2">
+          <div class="box1">
              <img src="images/bank.png">
              <div class="txt">
                <h3>STARTUP INVESTMENT</h3>
@@ -159,7 +186,7 @@
                nibh, molestie id viverra.</p>
               </div>
           </div>
-          <div class="box3">
+          <div class="box1">
              <img src="images/analytics.png">
              <div class="txt">
                <h3>RISK ANALYSIS</h3>
@@ -167,7 +194,7 @@
                nibh, molestie id viverra.</p>
               </div>
           </div>
-          <div class="box4">
+          <div class="box1">
              <img src="images/graph.png">
              <div class="txt">
                <h3>MARKET MONITORING</h3>
@@ -192,7 +219,7 @@
          <div class="casess">
             <div class="case-box1">
               <div class="box-1">
-               <div class="pic1">
+               <div class="pic">
                    <img src="images/iStock-527051036-640x425.jpg" alt="">
                </div>
                <div class="text-box1">
@@ -205,7 +232,7 @@
               </div>
               </div>
              <div class="case-box2">
-                 <div class="box-2">
+                 <div class="box-1">
                    <div class="pic">
                        <img src="images/ThinkstockPhotos-465455404_0.jpg" alt="">
                    </div>
@@ -219,7 +246,7 @@
                  </div>
              </div>
              <div class="case-box3">
-                 <div class="box-3">
+                 <div class="box-1">
                    <div class="pic">
                        <img src="images/what is employee engagement software.webp" alt="">
                    </div>
@@ -255,11 +282,11 @@
             <h3>Our Best Services For You</h3>
             <h5>Udicium Appear bearing seasons cattle appear earth male moved
                give midst seed in you’ll likeness earth herb yielding.</h5>
-            <p>Our new professional accountants and administrators ready. tempus, arcu quis <br>
-               vehicula posuere, massa lacus. Udicium Appear bearing seasons cattle appear earth <br>
-               male moved give midst seed in you’ll likeness earth herb yielding. Our new <br>
-               professional accountants and administrators ready. tempus, arcu quis vehicula <br>
-               posuere, massa lacus. cattle appear earth male moved give midst seed in you’ll <br>
+            <p>Our new professional accountants and administrators ready. tempus, arcu quis 
+               vehicula posuere, massa lacus. Udicium Appear bearing seasons cattle appear earth 
+               male moved give midst seed in you’ll likeness earth herb yielding. Our new 
+               professional accountants and administrators ready. tempus, arcu quis vehicula 
+               posuere, massa lacus. cattle appear earth male moved give midst seed in you’ll 
                likeness earth herb yielding.</p>
              <div class="img">
                <img src="images/h2.png">
@@ -280,7 +307,7 @@
                    accountants and administrators ready.</p>
              </div>
           </div>
-          <div class="bx-2">
+          <div class="bx-1">
             <div class="icn">
             <i class="fa-solid fa-scale-balanced"></i>
             </div>
@@ -288,25 +315,26 @@
               <h3>
                TAX PLANNING & LEGAL SUPPORT
               </h3>
-              <p>Seasons cattle appear earth male moved give midst seed in <br>
-                  you’ll likeness earth herb yielding. Our new professional <br>
-                  accountants and administrators ready.</p>
+              <p>Seasons cattle appear earth male moved give midst seed in
+                  you’ll likeness earth herb yielding. Our new professional
+                  accountants and administrators ready.
+                </p>
             </div>
          </div>
-         <div class="bx-3">
+         <div class="bx-1">
             <div class="icn">
             <i class="fa-solid fa-train"></i>
             </div>
-            <div class="icn-txt">
+            <div class="icn-txt icn-txt1">
               <h3>
                LOGISTIC DISTRIBUTION
               </h3>
-              <p>Seasons cattle appear earth male moved give midst seed in <br>
-                  you’ll likeness earth herb yielding. Our new professional <br>
+              <p>Seasons cattle appear earth male moved give midst seed in
+                  you’ll likeness earth herb yielding. Our new professional
                   accountants and administrators ready.</p>
             </div>
          </div>
-         <div class="bx-4">
+         <div class="bx-1">
             <div class="icn">
             <i class="fa-regular fa-id-card"></i>
             </div>
@@ -314,8 +342,8 @@
               <h3>
                   AUDIT & ASSURANCE
               </h3>
-              <p>Seasons cattle appear earth male moved give midst seed in <br>
-                  you’ll likeness earth herb yielding. Our new professional <br>
+              <p>Seasons cattle appear earth male moved give midst seed in 
+                  you’ll likeness earth herb yielding. Our new professional 
                   accountants and administrators ready.</p>
             </div>
          </div>
@@ -324,13 +352,13 @@
  </div>
  <div id="capability">
     <div class="capability-txt">
-        <h3>We Use Our Focused Set Of Capabilities To Build<br>
-        Great Experiences</h3>
-        <h5>Quisque ligula eros tincidunt sit amet tortor quis condimentum rhoncus mauris tothe. Mauris arcu ipsum, rem 
-        Ipsum is simply dummy text of the printing.</h5>
+        <h3><span class="span-t">We Use Our Focused Set Of Capabilities To Build</span>
+        <span class="span-t">Great Experiences</span></h3>
+        <h5>Quisque ligula eros tincidunt sit amet tortor quis condimentum rhoncus mauris tothe. Mauris <span class="capability-t"> arcu ipsum, rem 
+        Ipsum is simply dummy text of the printing.</span></h5>
         <p>Mattis iudicium purus sit amet fermentum at nos hinc posthac, sitientis piros afros. Lorem ipsum dolor sit amet, consecteturv adipisici elit.
-        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Integer in nunc nunc. Ut a pretium dolor. Curabitur volutpat </span>
-        <span1>laoreet justo eget elementum. Mauris eu enim interdum, facilisis nibh ac, sodales ligula.</span1></p>
+        Lorem <span class="capability-t">Ipsum is simply dummy text of the printing and typesetting industry. Integer in nunc nunc. Ut a pretium dolor. Curabitur volutpat
+        laoreet justo eget <span class="capability-t">elementum. Mauris eu enim interdum, facilisis nibh ac, sodales ligula.</span></span></p>
     </div>
     <div class="bttn">
         <a href=""><button>Read More</button></a>
@@ -341,9 +369,9 @@
      <section class="Blog">
          <h3>Our Latest Blog</h3>
       </section>
-      <div class="blogbx">
-         <div class="bb">
-            <div class="blogbx1">
+      <div class="blogbx-container">
+         <div class="blogbx">
+             <div class="blogbx1">
                 <div class="blogoverlay">
                 </div>
                 <div class="blogtext">
@@ -359,14 +387,12 @@
                         <li><span1>/</span1></li>
                         <li><i class="fa-solid fa-comments"></i><span> 2 comment</span></li>
                     </ul>
-                    <p>Lorem Ipsum is simply dummy text of the<br>
-                    printing and typesetting industry. Lorem Ipsum<br>
+                    <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum
                     has been the industry.</p>
                 </div>
             </div>
-          </div>
-          <div class="bb">
-            <div class="blogbx2">
+          <div class="blogbx2">
                 <div class="blogoverlay">
                 </div>
                 <div class="blogtext">
@@ -375,21 +401,19 @@
                         <span><p>2018</p></span>
                   </div>
                 </div>
-                <div class="blogtxt1">
+                <div class="blogtxt">
                     <h3>Business Accounting Wealth</h3>
                     <ul class="icns">
                         <li><i class="fa-solid fa-user"></i><span>By Admin</span></li>
                         <li><span1>/</span1></li>
                         <li><i class="fa-solid fa-comments"></i><span> 2 comment</span></li>
                     </ul>
-                    <p>Lorem Ipsum is simply dummy text of the<br>
-                    printing and typesetting industry. Lorem Ipsum<br>
+                    <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum
                     has been the industry.</p>
                 </div>
             </div>
-          </div>
-          <div class="bb">
-            <div class="blogbx3">
+           <div class="blogbx3">
                 <div class="blogoverlay">
                 </div>
                 <div class="blogtext">
@@ -405,36 +429,38 @@
                         <li><span1>/</span1></li>
                         <li><i class="fa-solid fa-comments"></i><span> 2 comment</span></li>
                     </ul>
-                    <p>Lorem Ipsum is simply dummy text of the<br>
-                    printing and typesetting industry. Lorem Ipsum<br>
+                    <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum
                     has been the industry.</p>
                 </div>
             </div>
-          </div>
-          </div>
+         </div>
       </div>
  </div>
    <div id="experience">
       <section class="experiences">
           <h3>Experience True Business Performance</h3>
       </section>
-      <section class="experiencebx">
-        <div class="experiencebx1">
+      <section class="experiencebx-container">
+        <div class="experiencebx">
+             <div class="experiencebx1">
             <h3 id="experience-no">0</h3>
             <p>Years Of Experience</p>
         </div>
-        <div class="experiencebx2">
+        <div class="experiencebx1">
             <h3 id="experience-no2">0</h3>
             <p>Successful Projects</p>
        </div>
-       <div class="experiencebx3">
+       <div class="experiencebx1">
         <h3 id="experience-no3">0</h3>
         <p>Happy Clients</p>
       </div>
-      <div class="experiencebx4">
+      <div class="experiencebx1">
         <h3 id="experience-no4">0</h3>
         <p>Team Members</p>
       </div>
+        </div>
+       
       </section>
    </div>
    <footer>
@@ -443,15 +469,24 @@
             <div class="footbx1">
                 <h4>ABOUT COMPANY</h4>
                 <p><img src="images/footer-logo.png"></p>
-                <p><span>Lorem ipsum dolor sit amet, consectetur<br>
-                adipiscing elit, sed do eiusmod tempor is<br>
-                incididunt ut labore et dolore. morem isa<br>
-                ipsum dolor sit amet, consectetur adipisc<br>
+                <p><span>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor is
+                incididunt ut labore et dolore. morem isa
+                ipsum dolor sit amet, consectetur adipisc
                 ing elit, sed do eiusmod</span></p>
                 <ul class="address">
                     <li><i class="fa-solid fa-phone"></i><span>Tel:</span> <span1>(654) 321-7654</span1></li>
                     <li><i class="fa-solid fa-envelope"></i><span>Email:</span><span1>mail@thewebmax.com</span1></li>
                     <li><i class="fa-solid fa-location-dot"></i><span>Location:</span><span1>145 N Los Ave, NY</span1></li>
+                </ul>
+                <ul class="social">
+                    <h6 class="social">Social:
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                    <li><i class="fa-solid fa-wifi"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li></h6>
                 </ul>
             </div>
             <div class="footbx2">
@@ -537,7 +572,7 @@
           </div>
      </div>
        <div class="form">
-            <input type="email" id="Email" placeholder="ENTER YOUR EMAIL">
+            <input type="email" id="Email" class="form-control" placeholder="ENTER YOUR EMAIL">
             <a href="#"><button>Subscribe Now</button></a>
        </div>
      </div>
@@ -559,12 +594,201 @@
      </div>
    </footer>
         <button onclick="backToTop()" id="totop"><i class="fa-solid fa-chevron-up"></i></button>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        
+         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script src="owlcarousel/dist/owl.carousel.min.js"></script>
         <script src="./index.js"></script>
 
     <script>
+        $(document).ready(function(){
+         let navbar = $(".sub-navbar");
+         let stickyPoint = navbar.offset().top;
+
+           $(window).on("scroll",function(){
+              if ($(window).scrollTop() > stickyPoint){
+                 navbar.addClass("sticky");
+               } 
+               else {
+                 navbar.removeClass("sticky");
+                }
+           });
+       });
+    </script>
+    <script>
+        $(document).ready(function() {
+             const toggleMenu = $('.toggle-menu');
+            const mobileMenu = $('#mobileMenu');
+            const mobileOverlay = $('#mobileOverlay');
+            const mobileCloseBtn = $('#mobileCloseBtn');
+            const body = $('body');
+
+            // Function to open/close mobile menu
+            function toggleMobileMenu() {
+                const isOpening = !mobileMenu.hasClass('active');
+                
+                toggleMenu.toggleClass('active');
+                mobileMenu.toggleClass('active');
+                mobileOverlay.toggleClass('active');
+                body.toggleClass('menu-open');
+                
+                // Animate hamburger to X
+                if (isOpening) {
+                    $('.toggle-menu .fa-bars').css('transform', 'rotate(90deg)');
+                } else {
+                    $('.toggle-menu .fa-bars').css('transform', 'rotate(0deg)');
+                }
+            }
+
+            // Event Listeners for Mobile Menu
+            toggleMenu.on('click', toggleMobileMenu);
+            mobileCloseBtn.on('click', toggleMobileMenu);
+            mobileOverlay.on('click', toggleMobileMenu);
+
+            // Close menu with ESC key
+            $(document).on('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenu.hasClass('active')) {
+                    toggleMobileMenu();
+                }
+            });
+
+            // Mobile Dropdown Toggle with Arrow Animation
+            $('.mobile-nav-link[data-dropdown]').on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const dropdownId = $(this).data('dropdown');
+                const dropdown = $('#' + dropdownId);
+                const arrowIcon = $(this).find('.fa-angle-down');
+                
+                // Toggle current dropdown with arrow animation
+                $(this).toggleClass('active');
+                dropdown.toggleClass('active');
+                
+                // Animate arrow
+                if ($(this).hasClass('active')) {
+                    arrowIcon.css('transform', 'rotate(180deg)');
+                } else {
+                    arrowIcon.css('transform', 'rotate(0deg)');
+                }
+                
+                // Close other dropdowns
+                $('.mobile-dropdown').not(dropdown).removeClass('active');
+                $('.mobile-nav-link').not(this).removeClass('active')
+                    .find('.fa-angle-down').css('transform', 'rotate(0deg)');
+            });
+
+            // Handle Window Resize
+            let resizeTimer;
+            $(window).on('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    // If window is larger than 1024px (desktop size)
+                    if ($(window).width() > 1024) {
+                        // Close mobile menu
+                        toggleMenu.removeClass('active');
+                        mobileMenu.removeClass('active');
+                        mobileOverlay.removeClass('active');
+                        body.removeClass('menu-open');
+                        
+                        // Reset hamburger animation
+                        $('.toggle-menu .fa-bars').css('transform', 'rotate(0deg)');
+                        
+                        // Close all mobile dropdowns and reset arrows
+                        $('.mobile-dropdown').removeClass('active');
+                        $('.mobile-nav-link').removeClass('active')
+                            .find('.fa-angle-down').css('transform', 'rotate(0deg)');
+                    }
+                }, 250);
+            });
+
+            // Desktop dropdown hover effect with arrow animation
+            $('.has-dropdown').hover(
+                function() {
+                    if ($(window).width() > 1024) {
+                        const arrow = $(this).find('.fa-angle-down');
+                        arrow.css('transform', 'rotate(180deg)');
+                        $(this).find('.dropdown-list').addClass('show');
+                    }
+                },
+                function() {
+                    if ($(window).width() > 1024) {
+                        const arrow = $(this).find('.fa-angle-down');
+                        arrow.css('transform', 'rotate(0deg)');
+                        $(this).find('.dropdown-list').removeClass('show');
+                    }
+                }
+            );
+
+            // Prevent mobile dropdowns from closing when clicking inside
+            $('.mobile-dropdown').on('click', function(e) {
+                e.stopPropagation();
+            });
+
+            // Smooth scroll for contact buttons
+            $('.banner-bttn').on('click', function(e) {
+                e.preventDefault();
+                const target = $(this).closest('a').attr('href');
+                if (target !== '#') {
+                    // Close mobile menu if open
+                    if (mobileMenu.hasClass('active')) {
+                        toggleMobileMenu();
+                    }
+                    
+                    // Simulate scroll to section
+                    $('html, body').animate({
+                        scrollTop: $('#banner').offset().top + $('#banner').height()
+                    }, 1000);
+                    
+                    // Show success message (for demo)
+                    const originalText = $(this).text();
+                    $(this).text('SCROLLING...');
+                    setTimeout(() => {
+                        $(this).text(originalText);
+                    }, 1000);
+                }
+            });
+
+            // Add hover effect for navigation items
+            $('.menu1 .dropdown > li').hover(
+                function() {
+                    $(this).css('transform', 'translateY(-2px)');
+                },
+                function() {
+                    $(this).css('transform', 'translateY(0)');
+                }
+            );
+
+            // Search icon click handler (for demo)
+            $('.fa-magnifying-glass').on('click', function() {
+                if ($(window).width() <= 1024) {
+                    alert('Search functionality would open here');
+                }
+            });
+
+            // Shopping cart icon click handler (for demo)
+            $('.fa-bag-shopping').on('click', function() {
+                if ($(window).width() <= 1024) {
+                    alert('Cart would open here (2 items)');
+                }
+            });
+        });
+    </script>
+     <script>
+         $(document).ready(function (){
+          $('.has-dropdown').hover(
+           function () {
+             $('.has-dropdown').not(this).removeClass('active');
+             $(this).addClass('active');
+            },
+           function () {
+              $(this).removeClass('active');
+           }
+          );
+         });
+      </script>
+      
+
+     <script>
         $(document).ready(function () {
            $('.owl-banner').owlCarousel({
              loop:true,
@@ -599,7 +823,7 @@
          if(Count>=25){
              clearInterval(CountData);
            }
-        },100)
+        },500)
 
         let Count1=0;
 
@@ -608,7 +832,7 @@
             if(Count1>=400){
               clearInterval(CountData1);
             }
-        },100)
+        },500)
 
         let Count2=0;
 
@@ -617,7 +841,7 @@
             if(Count2>=670){
               clearInterval(CountData2);
             }
-        },100)
+        },500)
         
         let Count3=0;
 
@@ -626,7 +850,7 @@
              if(Count3>=125){
              clearInterval(CountData3);
             }
-        },100)
+        },500)
     </script>
     <script>
          let totop = document.getElementById("totop");
