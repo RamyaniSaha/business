@@ -600,21 +600,6 @@
         <script src="./index.js"></script>
 
     <script>
-        $(document).ready(function(){
-         let navbar = $(".sub-navbar");
-         let stickyPoint = navbar.offset().top;
-
-           $(window).on("scroll",function(){
-              if ($(window).scrollTop() > stickyPoint){
-                 navbar.addClass("sticky");
-               } 
-               else {
-                 navbar.removeClass("sticky");
-                }
-           });
-       });
-    </script>
-    <script>
         $(document).ready(function() {
              const toggleMenu = $('.toggle-menu');
             const mobileMenu = $('#mobileMenu');
@@ -786,7 +771,20 @@
           );
          });
       </script>
-      
+      <script>
+      $(document).ready(function(){
+        let navbar = $(".sub-navbar");
+        let stickyPoint = navbar.offset().top;
+
+        $(window).on("scroll",function(){
+          if ($(window).scrollTop() > stickyPoint){
+            navbar.addClass("sticky");
+          } else {
+            navbar.removeClass("sticky");
+          }
+        });
+      });
+    </script>
 
      <script>
         $(document).ready(function () {
