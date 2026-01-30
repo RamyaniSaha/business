@@ -2005,8 +2005,18 @@
     .casess {
         grid-template-columns: repeat(1, 1fr);
     }
+    .case-box3 {
+        left: 0em;
+    }
     .blogbx {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .blogbx3{
+        left: 0em;
+    }
+    #experience{
+        padding-top: 8px;
+        padding-bottom: 10em;
     }
     .experiencebx {
       grid-template-columns: repeat(1, 1fr);
@@ -2068,9 +2078,6 @@
    .texts p{
      font-size: 15px;
    }
-    .case-box3 {
-        left: 0em;
-    }
     .background-text h3{
         font-size: 25.8px;
         line-height: 30px;
@@ -2156,15 +2163,8 @@
     .blogbx-container {
         margin-top: 2em;
     }
-    .blogbx3 {
-        left: 0em;
-    }
     .blogtxt p{
         font-size: 15px;
-    }
-    #experience{
-        padding-top: 8px;
-        padding-bottom: 10em;
     }
     .experiences h3{
         font-size: 25.8px;
