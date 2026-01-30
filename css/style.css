@@ -1998,6 +1998,26 @@
     }
 }
 
+@media only screen and (max-width: 689px){
+  .card-pic {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .casess {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blogbx {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .experiencebx {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .foot-box {
+        grid-template-columns: repeat(1, 1fr) !important;
+        padding: 0 1.4em;
+        margin-top: 6em;
+    }
+}
+
 @media only screen and  (max-width: 562px){
     .sub-navbar{
         gap: 10%;
@@ -2041,9 +2061,6 @@
     .span-t2{
         display: inline;
     }
-    .card-pic {
-        grid-template-columns: repeat(1, 1fr);
-    }
    .texts h3{
      width: 100% !important;
      font-size: 25.8px;
@@ -2051,9 +2068,6 @@
    .texts p{
      font-size: 15px;
    }
-   .casess {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .case-box3 {
         left: 0em;
     }
@@ -2062,6 +2076,7 @@
         line-height: 30px;
     }
     .background-text p{
+        margin-top: 0.8em;
         font-size: 15px;
         line-height: 22px;
     }
@@ -2138,9 +2153,6 @@
     .Blog h3{
         font-size: 25.8px;
     }
-    .blogbx {
-        grid-template-columns: repeat(1, 1fr);
-    }
     .blogbx-container {
         margin-top: 2em;
     }
@@ -2157,19 +2169,11 @@
     .experiences h3{
         font-size: 25.8px;
     }
-    .experiencebx {
-      grid-template-columns: repeat(1, 1fr);
-    }
     .experiencebx1 h3{
         font-size: 38px;
     }
     .experiencebx1 p{
         font-size: 15px;
-    }
-    .foot-box {
-        grid-template-columns: repeat(1, 1fr) !important;
-        padding: 0 1.4em;
-        margin-top: 6em;
     }
     .footbx1 h4{
         padding-bottom: 26px;
@@ -2237,14 +2241,21 @@
    .icontxt-p{
      font-size: 14px;
    }
+   .video-play-btn2::before {
+        top: -72%;
+        left: -72%;
+    }
    .blogbx-container{
-    padding: 0 1.2em;
+     padding: 0 1.2em;
    }
    .blogtxt{
     top: 48%;
    }
+   .blogbx1, .blogbx2, .blogbx3 {
+       height: 32vh;
+    }
    .bx-1{
-     height: 28vh;
+     height: 20vh;
    }
 }
 @media (max-width:362px){
