@@ -49,20 +49,20 @@
                      </div>
                   <nav class="menu1">
                     <ul class="dropdown">
-                        <li class="has-dropdown">HOME <i class="fa-solid fa-angle-down"></i>
+                        <li class="has-dropdown"><a href="#" class="mobile-nav-link">HOME </a><i class="fa-solid fa-angle-down"></i>
                             <ul class="dropdown-list">
                                 <li><a href="#">Home 1</a></li>
                                 <li><a href="#">Home 2</a></li>
                                 <li><a href="#">Home 3</a></li>
                             </ul>
                         </li>
-                        <li>FEATURES</li>
-                        <li>CASE STUDIES</li>
-                        <li>SERVICES</li>
-                        <li>BLOG</li>
-                        <li>SITE MAP</li>
+                        <li><a href="#middle-sec" class="mobile-nav-link">FEATURES</a></li>
+                        <li><a href="#caseStudies" class="mobile-nav-link">CASE STUDIES</a></li>
+                        <li><a href="#services" class="mobile-nav-link">SERVICES</a></li>
+                        <li><a href="#blog" class="mobile-nav-link">BLOG</a></li>
+                        <li><a href="#" class="mobile-nav-link">SITE MAP</a></li>
                         <span class="carts">
-                            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li class="glass"><i class="fa-solid fa-magnifying-glass"></i></li>
                             <li><i class="fa-solid fa-bag-shopping"></i><span>2</span></li>
                         </span>
                     </ul>
@@ -71,7 +71,7 @@
                 <!-- Mobile Toggle -->
                 <div class="toggle">
                     <span>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass glasses"></i>
                         <i class="fa-solid fa-bag-shopping"></i><span class="toggle-sub">2</span>
                         <button class="toggle-menu" aria-label="Toggle Menu">
                             <i class="fa-solid fa-bars"></i>
@@ -94,10 +94,10 @@
                             <li><a href="#">Home 3</a></li>
                         </ul>
                     </li>
-                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">FEATURES</a></li>
-                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">CASE STUDIES</a></li>
-                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">SERVICES</a></li>
-                    <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">BLOG</a></li>
+                    <li class="mobile-nav-li"><a href="#middle-sec" class="mobile-nav-link1">FEATURES</a></li>
+                    <li class="mobile-nav-li"><a href="#caseStudies" class="mobile-nav-link1">CASE STUDIES</a></li>
+                    <li class="mobile-nav-li"><a href="#services" class="mobile-nav-link1">SERVICES</a></li>
+                    <li class="mobile-nav-li"><a href="#blog" class="mobile-nav-link1">BLOG</a></li>
                     <li class="mobile-nav-li"><a href="#" class="mobile-nav-link1">SITE MAP</a></li>
                 </ul>
             </div>
@@ -205,7 +205,7 @@
         </div>
     </div>
 </div>
-  <secton class="Case-Studies">
+  <secton id="caseStudies" class="Case-Studies">
      <div class="cases">
          <div class="case-box">
             <div class="texts">
@@ -744,7 +744,7 @@
             );
 
             // Search icon click handler (for demo)
-            $('.fa-magnifying-glass').on('click', function() {
+            $('.glasses').on('click', function() {
                 if ($(window).width() <= 1024) {
                     alert('Search functionality would open here');
                 }
