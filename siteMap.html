@@ -4,8 +4,422 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Map</title>
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<style>
+    .hero{
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 288px;
+      background-image: url("./images/slide2.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      align-content: center;
+    }
+    .overlay{
+      position: absolute;
+      background-color:  rgba(0, 0, 0, 0.199);
+      width: 100%;
+      height: 100%;
+      top: 0;
+    }
+    .banner-texts{
+      position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+    .banner-subtext{
+      text-align: center;
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 44px;
+      text-decoration-line: underline;
+      text-decoration-style: double;
+      text-decoration-thickness: 2px;
+    }
+    .banner-subtext2{
+      margin-top: 0.6em;
+      display: flex;
+      justify-content: center;
+      gap: 0.4em;
+    }
+    .fa-house{
+      font-size: 10px;
+      color: #363636;
+      align-content: center;
+      transition: color 0.3s ease;
+    }
+   .banner-subtext2:hover .fa-house,.banner-subtext2:hover .banner-txtlink{
+      color: red;
+    }
+    .banner-txtlink{
+      text-decoration: none;
+      color: #363636;
+    }
+    .banner-subtxt2{
+      align-content: center;
+      font-size: 14px;
+      font-family: Poppins, sans-serif;
+    }
+
+    .tree-sitemap {
+      padding: 100px 0;
+      background: #f8fafc;
+      text-align: center;
+      position: relative;
+    }
     
+    /*Root*/
+    .tree-root{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .tree-root img {
+      height: 60px;
+    }
+    .tree-root h2 {
+      margin-top: 12px;
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+   /* LEVEL */
+   .tree-level{
+     display: flex;
+     justify-content: center;
+     gap: 8%;
+     margin-top: 90px;
+    }
+    /* NODE */
+   .tree-node {
+      background: transparent;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      font-family: Poppins, sans-serif;
+      position: relative;
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    .tree-node a{
+      color: black;
+      text-decoration: none;
+    }
+    .tree-node a:hover{
+      color: red;
+      text-decoration: underline;
+      text-decoration-color: rgb(255, 117, 117);
+    }
+
+    .tree-node span{
+      white-space: nowrap;
+    }
+
+    /* SUB ITEMS */
+    .tree-node ul {
+      margin-top: 14px;
+      font-family: Poppins, sans-serif;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tree-node ul li{
+      font-size: 14px;
+      font-family: Poppins, sans-serif;
+      color: #2d2d2d;
+      opacity: .75;
+      margin-top: 6px;
+    }
+
+    .tree-node ul li a{
+      text-decoration: none;
+      color: #2d2d2d;
+    }
+
+    /* SVG */
+    .tree-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .tree-svg path {
+      width: 100%;
+      fill: none;
+      stroke: rgba(255, 176, 176, 0.872);
+      stroke-width: 2;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+    }
+
+    @media only screen and (max-width: 1080px){
+      .tree-level {
+        gap: 4%;
+        flex-wrap: wrap;
+      }
+    }
+
+    @media only screen and (max-width: 768px){
+      .tree-sitemap{
+        padding: 40px 0 80px 0;
+      }
+
+      .tree-root img {
+        width: 30%;
+        height: 38px;
+      }
+
+      .tree-root h2 {
+        font-size: 20px;
+      }
+
+     /* STACK TREE */
+      .tree-level {
+        align-items: center;
+        margin-top: 0px;
+        gap: 24px;
+      }
+
+      .tree-node {
+        width: 28%;
+        max-width: 320px;
+        background-color: white;
+        box-shadow: 0 10px 25px rgba(0,0,0,.06);
+        font-size: 14.6px;
+        padding: 20px;
+      }
+
+      .tree-node ul li {
+        font-size: 13px;
+      }
+
+      /* SVG HEIGHT AUTO */
+      .tree-svg {
+        height: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 582px){
+      .banner-subtext{
+        font-size: 34px;
+      }
+      .tree-root img {
+        height: 32px;
+      }
+
+      .tree-root h2 {
+        font-size: 18px;
+      }
+
+     /* STACK TREE */
+      .tree-level {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        gap: 24px;
+      }
+
+      .tree-node {
+        width: 28%;
+        max-width: 320px;
+        background-color: white;
+        box-shadow: 0 10px 25px rgba(0,0,0,.06);
+        font-size: 14px;
+        padding: 20px;
+      }
+
+      .tree-node ul li {
+        font-size: 12px;
+      }
+    }
+    
+    @media only screen and (max-width: 382px){
+    
+    }
+
+
+
+</style>
+<body>
+   <header>
+
+      <div class="banner">
+        <div id="header"></div>
+        <div class="hero">
+         <div class="overlay"></div>
+           <div class="banner-texts">
+              <h2 class="banner-subtext">Site Map</h2>
+              <div class="banner-subtext2">
+                <i class="fa-solid fa-house"></i>
+                <h6 class="banner-subtxt2"><a class="banner-txtlink" href="./index.html">Home</a></h6>
+              </div>
+           </div>
+        </div>
+      </div>
+   </header>
+   <div id="main-sec">
+    <section class="tree-sitemap">
+      <div class="tree-root">
+        <img class="siteMap-logo" src="./images/logo-1.png" alt="Logo">
+        <h2 class="siteMap-logoTxt">BUSINESS WEBSITE</h2>
+      </div>
+      <!-- SVG CONNECTORS -->
+     <svg class="tree-svg"></svg>
+      <!-- LEVEL 1 -->
+     <div class="tree-level">
+       <div class="tree-node has-children">
+         <a href="./index.html"><span class="home">Home</span></a>
+          <ul class="home-dropdown">
+            <li><a href="./index.html#">Home 1</a></li>
+            <li><a href="./index.html#">Home 2</a></li>
+            <li><a href="./index.html#">Home 3</a></li>
+          </ul>
+       </div>
+        <div class="tree-node"><a href="./index.html#middle-sec"><span>Features</span></a></div>
+        <div class="tree-node"><a href="./index.html#caseStudies"><span>Case Studies</span></a></div>
+        <div class="tree-node"><a href="./index.html#services"><span>Services</span></a></div>
+        <div class="tree-node"><a href="./index.html#blog"><span>Blog</span></a></div>
+        <div class="tree-node"><a href="#"><span>Site Map</span></a></div>
+     </div>
+
+     
+    </section>
+
+
+   </div>
+
+  <!-- Page Content -->
+  <!-- Footer Load -->
+   <div id="footer"></div>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="/main.js"></script>
+   
+  <script>
+    $(document).ready(function(){
+
+      $('.tree-node').each(function(i){
+        $(this).delay(200 * i).animate({
+            opacity: 1,
+            top: 0
+        }, 600);
+      });
+
+      drawTreeLines();
+   });
+  </script>
+
+  <script>
+    function drawTreeLines(){
+
+      const svg = document.querySelector('.tree-svg');
+      const root = document.querySelector('.tree-root');
+      const nodes = document.querySelectorAll('.tree-node');
+
+      svg.setAttribute("height", document.body.scrollHeight);
+
+      const rootRect = root.getBoundingClientRect();
+      const svgRect = svg.getBoundingClientRect();
+
+      nodes.forEach(node => {
+
+        const rect = node.getBoundingClientRect();
+
+        const startX = rootRect.left + rootRect.width / 2 - svgRect.left;
+        const startY = rootRect.bottom - svgRect.top;
+
+        const endX = rect.left + rect.width / 2 - svgRect.left;
+        const endY = rect.top - svgRect.top;
+
+        const path = document.createElementNS("http://www.w3.org/2000/svg","path");
+
+        path.setAttribute(
+            "d",
+            `M ${startX} ${startY}
+             V ${(startY + endY) / 2}
+             H ${endX}
+             V ${endY}`
+        );
+
+        svg.appendChild(path);
+
+        setTimeout(() => {
+            path.style.strokeDashoffset = "0";
+        }, 600);
+      });
+    }
+  </script>
+
+  <script>
+    function drawFullTreeLines() {
+
+      const svg = document.querySelector('.tree-svg');
+      const root = document.querySelector('.tree-root');
+      const nodes = document.querySelectorAll('.tree-node');
+      const container = document.querySelector('.tree-sitemap');
+
+      svg.innerHTML = '';
+      svg.setAttribute('height', container.scrollHeight);
+
+      const isMobile = window.innerWidth <= 768;
+
+      const rootRect = root.getBoundingClientRect();
+      const svgRect = svg.getBoundingClientRect();
+
+      nodes.forEach(node => {
+
+        const rect = node.getBoundingClientRect();
+
+        const startX = rootRect.left + rootRect.width / 2 - svgRect.left;
+        const startY = rootRect.bottom - svgRect.top;
+
+        const endX = rect.left + rect.width / 2 - svgRect.left;
+        const endY = rect.top - svgRect.top;
+
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+
+        // Mobile = straight vertical lines
+        const d = isMobile
+            ? `M ${startX} ${startY} V ${endY}`
+            : `M ${startX} ${startY}
+               V ${(startY + endY) / 2}
+               H ${endX}
+               V ${endY}`;
+
+        path.setAttribute("d", d);
+        svg.appendChild(path);
+
+        setTimeout(() => {
+            path.style.strokeDashoffset = "0";
+        }, 400);
+     });
+    }
+  </script>
+
+  
+  <script>
+   $(window).on('resize', function () {
+      $('.tree-svg').empty();
+      drawFullTreeLines();
+   });
+  </script>
+
+
 </body>
 </html>

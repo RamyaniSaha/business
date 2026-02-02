@@ -16,10 +16,11 @@
 
 .navbar{
     width: auto;
-    padding: 10px ;
+    height: 30px;
     display: flex;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
     border: 1px solid rgba(148, 146, 146, 0.486);
 }
 
@@ -47,13 +48,54 @@
 }
 
 .menu-1 ul li{
-    display: inline;
+    display: inline-flex;
     list-style: none;
-    padding: 10px 10px;
-    border-left: 1px solid rgba(148, 146, 146, 0.486);
 }
-
+.menu-1 ul li:nth-child(1){
+    padding: 10px;
+    border-left: 1px solid  rgba(148, 146, 146, 0.486);
+    border-right: 1px solid  rgba(148, 146, 146, 0.486);
+}
+.menu-1 ul li:nth-child(2){
+    position: relative;
+    left: -0.28em;
+    padding: 10px 8px;
+    border-right: 1px solid  rgba(148, 146, 146, 0.486);
+}
+.menu-1 ul li:nth-child(2):hover{
+    padding: 10px 8px;
+    background-color: rgba(148, 146, 146, 0.486);
+}
+.menu-1 ul li:nth-child(3){
+    position: relative;
+    left: -0.52em;
+    padding: 10px;
+    border-right: 1px solid  rgba(148, 146, 146, 0.486);
+}
+.menu-1 ul li:nth-child(4){
+    position: relative;
+    left: -0.79em;
+    padding: 10px 7px;
+    border-right: 1px solid  rgba(148, 146, 146, 0.486);
+}
+.menu-1 ul li:nth-child(4):hover{
+    padding: 10px 7px;
+    background-color: rgba(148, 146, 146, 0.486);
+}
+.menu-1 ul li:nth-child(5){
+    position: relative;
+    left: -1.1em;
+    padding: 10px 7px;
+    border-right: 1px solid  rgba(148, 146, 146, 0.486);
+}
+.menu-1 ul li:nth-child(5):hover{
+    padding: 10px 7px;
+    background-color: rgba(148, 146, 146, 0.486);
+}
 .menu-1 ul li:nth-child(6){
+      position: relative;
+    left: -1.4em;
+    padding: 10px;
     border-right: 1px solid  rgba(148, 146, 146, 0.486);
 }
 
@@ -63,6 +105,7 @@
 }
 
 .menu-1 ul li:hover{
+    padding: 10px;
     background-color: rgba(148, 146, 146, 0.486);
 }
 
@@ -1578,6 +1621,7 @@
 }
 
 .companybx{
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2,auto);
     justify-content: space-around;
@@ -1993,9 +2037,10 @@
         padding-right: 1em;
     }
     .company-right{
-        height: 6vh;
+        height: 14vh;
         align-content: center;
     }
+    
 }
 
 @media only screen and (max-width: 689px){
@@ -2054,6 +2099,10 @@
     .textbox p{
         font-size: 15px;
         line-height: 22px;
+    }
+    .owl-nav span{
+      font-size: 28px;
+      padding: 2px 10px;
     }
     .middle-text h3{
         font-size: 25.8px;
@@ -2268,4 +2317,18 @@
    .blogbx1, .blogbx2, .blogbx3{
      height: 35vh;
    }
+   .form {
+        margin-top: 48px;
+    }
+   .form input {
+        width: 50%;
+        padding: 14px 8px 14px 8px;
+    }
+    .form input::placeholder{
+        font-size: 13px;
+    }
+    .form a button{
+        padding: 16px 10px;
+        font-size: 13px;
+    }
 }
